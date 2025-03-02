@@ -7,20 +7,22 @@
 
 import UIKit
 
-class AppCoordinator: BaseCoordinator {
+final class AppCoordinator: BaseCoordinator {
 
     let window: UIWindow
 
-    init(window: UIWindow, router: Routable) {
+    init(window: UIWindow) {
         self.window = window
-        super.init(router: router)
+        super.init(router: Router(navigationController: UINavigationController()))
     }
 
     func start() {
-        let viewController = ViewController()
-        let rootViewController = UINavigationController(rootViewController: viewController)
+        let viewController = UIViewController()
+        viewController.title = String(localized: "Crypto Tracker")
 
-        window.rootViewController = rootViewController
+        router.presentViewController(viewController, navigationStyle: .push, animated: false)
+
+        window.rootViewController = router.navigationController
         window.makeKeyAndVisible()
     }
 

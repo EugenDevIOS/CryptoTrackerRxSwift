@@ -13,6 +13,8 @@ public enum NavigationStyle {
 
 /// Интерфейс роутер для системы координаторов
 public protocol Routable: AnyObject {
+    var navigationController: UINavigationController { get }
+
     func presentViewController(_ viewController: UIViewController, navigationStyle: NavigationStyle, animated: Bool)
 //    func pushModule(_ module: Presentable, transition: Transition?, ....)
 //    func setRootModule(_ module: Presentable, transition: Transition?, ...)
@@ -28,18 +30,18 @@ public protocol Routable: AnyObject {
 
 public class Router: Routable {
 
-    public let rootNavigationController: UINavigationController
+    public let navigationController: UINavigationController
 
     private(set) var rootViewController: UIViewController?
 
-    init(rootNavigationController: UINavigationController) {
-        self.rootNavigationController = rootNavigationController
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
 
     public func presentViewController(_ viewController: UIViewController, navigationStyle: NavigationStyle, animated: Bool = true) {
         switch navigationStyle {
         case .push:
-            rootNavigationController.pushViewController(viewController, animated: animated)
+            navigationController.pushViewController(viewController, animated: animated)
         }
     }
 
