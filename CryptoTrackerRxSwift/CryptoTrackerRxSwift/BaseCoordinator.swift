@@ -31,6 +31,10 @@ open class BaseCoordinator {
         //        self.listener.recieveEvent = { ... }
     }
 
+    public func start() {
+        fatalError("\(type(of: self)) is abstract!")
+    }
+
     public func addChild(_ child: BaseCoordinator) {
         childCoordinators.append(child)
     }

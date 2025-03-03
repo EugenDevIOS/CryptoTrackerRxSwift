@@ -11,17 +11,18 @@ final class AppCoordinator: BaseCoordinator {
 
     let window: UIWindow
 
-    init(window: UIWindow) {
+    init(window: UIWindow, router: Routable) {
         self.window = window
-        super.init(router: Router(navigationController: UINavigationController()))
+        super.init(router: router)
     }
 
-    func start() {
+    override func start() {
         let viewController = UIViewController()
         viewController.title = String(localized: "Crypto Tracker")
 
         router.presentViewController(viewController, navigationStyle: .push, animated: false)
 
+        window.backgroundColor = .systemBackground
         window.rootViewController = router.navigationController
         window.makeKeyAndVisible()
     }
