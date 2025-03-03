@@ -1,11 +1,19 @@
 platform :ios, '17.5'
+install! 'cocoapods', warn_for_unused_master_specs_repo: false
 use_frameworks!
 
 target 'CryptoTrackerRxSwift' do
+    pod 'RxSwift', '6.9.0'
+    pod 'RxCocoa', '6.9.0'
     pod 'R.swift'
     # pod 'SDWebImageSwiftUI'
     pod 'SwiftLint'
     # pod 'SwiftyJSON'
+end
+
+target 'CryptoTrackerRxSwiftTests' do
+    pod 'RxBlocking', '6.9.0'
+    pod 'RxTest', '6.9.0'
 end
 
 # Post Install "error: IB Designables: Failed to render and update auto layout ..." fix
