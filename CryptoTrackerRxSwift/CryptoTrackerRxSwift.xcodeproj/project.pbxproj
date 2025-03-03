@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		93B1C65A2D7252E800E790ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C6592D7252E800E790ED /* AppDelegate.swift */; };
 		93B1C65C2D7252E800E790ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C65B2D7252E800E790ED /* SceneDelegate.swift */; };
-		93B1C65E2D7252E800E790ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C65D2D7252E800E790ED /* ViewController.swift */; };
-		93B1C6612D7252E800E790ED /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 93B1C6602D7252E800E790ED /* Base */; };
 		93B1C6642D7252E800E790ED /* CryptoTrackerRxSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C6622D7252E800E790ED /* CryptoTrackerRxSwift.xcdatamodeld */; };
 		93B1C6662D7252EA00E790ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B1C6652D7252EA00E790ED /* Assets.xcassets */; };
 		93B1C6692D7252EA00E790ED /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 93B1C6682D7252EA00E790ED /* Base */; };
 		93B1C6742D7252EA00E790ED /* CryptoTrackerRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C6732D7252EA00E790ED /* CryptoTrackerRxSwiftTests.swift */; };
 		93B1C67E2D7252EA00E790ED /* CryptoTrackerRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C67D2D7252EA00E790ED /* CryptoTrackerRxSwiftUITests.swift */; };
 		93B1C6802D7252EA00E790ED /* CryptoTrackerRxSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C67F2D7252EA00E790ED /* CryptoTrackerRxSwiftUITestsLaunchTests.swift */; };
-		93B1C6922D725A8600E790ED /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C6912D725A8600E790ED /* R.generated.swift */; };
+		93B1C6942D7320D700E790ED /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C6932D7320D700E790ED /* BaseCoordinator.swift */; };
+		93B1C6962D73215700E790ED /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C6952D73215700E790ED /* Routable.swift */; };
+		93B1C6982D73632800E790ED /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C6972D73632800E790ED /* AppCoordinator.swift */; };
+		93B1C69C2D737AD400E790ED /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B1C69B2D737AD400E790ED /* R.generated.swift */; };
 		9C6CFF215F4C527ECFBA4B19 /* Pods_CryptoTrackerRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710A2AC2DD7BE092A066A04F /* Pods_CryptoTrackerRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +45,6 @@
 		93B1C6562D7252E800E790ED /* CryptoTrackerRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTrackerRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B1C6592D7252E800E790ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93B1C65B2D7252E800E790ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93B1C65D2D7252E800E790ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		93B1C6602D7252E800E790ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93B1C6632D7252E800E790ED /* CryptoTrackerRxSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptoTrackerRxSwift.xcdatamodel; sourceTree = "<group>"; };
 		93B1C6652D7252EA00E790ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B1C6682D7252EA00E790ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +54,10 @@
 		93B1C6792D7252EA00E790ED /* CryptoTrackerRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTrackerRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B1C67D2D7252EA00E790ED /* CryptoTrackerRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerRxSwiftUITests.swift; sourceTree = "<group>"; };
 		93B1C67F2D7252EA00E790ED /* CryptoTrackerRxSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerRxSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		93B1C6912D725A8600E790ED /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		93B1C6932D7320D700E790ED /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		93B1C6952D73215700E790ED /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		93B1C6972D73632800E790ED /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		93B1C69B2D737AD400E790ED /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		E8A94FE6C7D22A08FB2D3524 /* Pods-CryptoTrackerRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrackerRxSwift.release.xcconfig"; path = "Target Support Files/Pods-CryptoTrackerRxSwift/Pods-CryptoTrackerRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,13 +120,9 @@
 		93B1C6582D7252E800E790ED /* CryptoTrackerRxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				93B1C6592D7252E800E790ED /* AppDelegate.swift */,
-				93B1C65B2D7252E800E790ED /* SceneDelegate.swift */,
-				93B1C65D2D7252E800E790ED /* ViewController.swift */,
-				93B1C66A2D7252EA00E790ED /* Info.plist */,
+				93B1C69A2D737A3700E790ED /* Application */,
 				93B1C6902D725A0100E790ED /* Resources */,
-				93B1C6912D725A8600E790ED /* R.generated.swift */,
-				93B1C6622D7252E800E790ED /* CryptoTrackerRxSwift.xcdatamodeld */,
+				93B1C6992D7379F000E790ED /* UI */,
 			);
 			path = CryptoTrackerRxSwift;
 			sourceTree = "<group>";
@@ -149,11 +147,32 @@
 		93B1C6902D725A0100E790ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				93B1C66A2D7252EA00E790ED /* Info.plist */,
+				93B1C69B2D737AD400E790ED /* R.generated.swift */,
 				93B1C6652D7252EA00E790ED /* Assets.xcassets */,
-				93B1C65F2D7252E800E790ED /* Main.storyboard */,
+				93B1C6622D7252E800E790ED /* CryptoTrackerRxSwift.xcdatamodeld */,
 				93B1C6672D7252EA00E790ED /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		93B1C6992D7379F000E790ED /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		93B1C69A2D737A3700E790ED /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				93B1C6592D7252E800E790ED /* AppDelegate.swift */,
+				93B1C65B2D7252E800E790ED /* SceneDelegate.swift */,
+				93B1C6972D73632800E790ED /* AppCoordinator.swift */,
+				93B1C6932D7320D700E790ED /* BaseCoordinator.swift */,
+				93B1C6952D73215700E790ED /* Routable.swift */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 		DF9294BB97C3E93530DCE170 /* Pods */ = {
@@ -275,7 +294,6 @@
 			files = (
 				93B1C6662D7252EA00E790ED /* Assets.xcassets in Resources */,
 				93B1C6692D7252EA00E790ED /* Base in Resources */,
-				93B1C6612D7252E800E790ED /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +332,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/CryptoTrackerRxSwift/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/CryptoTrackerRxSwift/Resources/R.generated.swift\"\n";
 		};
 		93B1C68D2D7257B100E790ED /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -380,9 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B1C65E2D7252E800E790ED /* ViewController.swift in Sources */,
+				93B1C6962D73215700E790ED /* Routable.swift in Sources */,
+				93B1C6942D7320D700E790ED /* BaseCoordinator.swift in Sources */,
+				93B1C69C2D737AD400E790ED /* R.generated.swift in Sources */,
 				93B1C65A2D7252E800E790ED /* AppDelegate.swift in Sources */,
-				93B1C6922D725A8600E790ED /* R.generated.swift in Sources */,
+				93B1C6982D73632800E790ED /* AppCoordinator.swift in Sources */,
 				93B1C65C2D7252E800E790ED /* SceneDelegate.swift in Sources */,
 				93B1C6642D7252E800E790ED /* CryptoTrackerRxSwift.xcdatamodeld in Sources */,
 			);
@@ -421,14 +441,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		93B1C65F2D7252E800E790ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93B1C6602D7252E800E790ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		93B1C6672D7252EA00E790ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -570,12 +582,11 @@
 				DEVELOPMENT_TEAM = 7F9J66S3LC;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoTrackerRxSwift/Info.plist;
+				INFOPLIST_FILE = CryptoTrackerRxSwift/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CryptoTracker;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,12 +617,11 @@
 				DEVELOPMENT_TEAM = 7F9J66S3LC;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoTrackerRxSwift/Info.plist;
+				INFOPLIST_FILE = CryptoTrackerRxSwift/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CryptoTracker;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
