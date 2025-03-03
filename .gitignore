@@ -24,3 +24,4 @@ playground.xcworkspace
 *.generated.swift
 
 #Pods
+Pods/
